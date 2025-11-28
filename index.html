@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athens Delivery – Fixed SP Survey</title>
+  <link rel="stylesheet" href="css/main.css">   <!-- your existing CSS -->
+  <script src="survey.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🚚 Athens Last-Mile Delivery Survey</h1>
+      <p>Help us design sustainable urban logistics solutions</p>
+    </div>
+
+    <!-- Product constants header (random balanced) -->
+    <div id="productHeader" class="instruction"></div>
+
+    <div class="content">
+      <!-- Progress bar -->
+      <p style="color:#666;margin-bottom:20px;">Question <span id="currentQ">1</span> of 12</p>
+      <div class="progress-bar"><div class="progress-fill" id="progressBar" style="width:8.3%"></div></div>
+
+      <!-- Choice cards injected here -->
+      <div id="choiceContainer"></div>
+
+      <!-- Navigation -->
+      <div style="margin-top:30px;">
+        <button class="btn btn-secondary" onclick="prevChoice()" id="prevBtn" disabled>← Previous</button>
+        <button class="btn btn-primary" onclick="nextChoice()" id="nextBtn" disabled>Next →</button>
+      </div>
+    </div>
+
+    <!-- Thank-you page -->
+    <div id="thankYou" class="summary" style="display:none;">
+      <h2>🎉 Thank You!</h2>
+      <p>Your responses have been recorded.</p>
+      <p>Response ID: <strong id="responseId"></strong></p>
+    </div>
+  </div>
+</body>
+</html>
