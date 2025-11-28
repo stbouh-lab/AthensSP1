@@ -4,7 +4,7 @@ let design = [];
 const responses = [];
 
 // load design
-fetch(https://raw.githubusercontent.com/stbouh-lab/AthensSP1/refs/heads/main/variant-a.csv)
+fetch('https://stbouh-lab.github.io/AthensSP1/variant-a.csv')
   .then(r => r.text())
   .then(csv => {
     design = csvToArray(csv);
