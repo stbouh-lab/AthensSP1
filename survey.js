@@ -1,6 +1,6 @@
 // survey.js – loads CSV → renders cards → exports .CHO
 let currentSet = 0;
-const design = [];
+let design = [];
 const responses = [];
 
 // load design
